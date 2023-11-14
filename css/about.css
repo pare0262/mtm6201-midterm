@@ -1,0 +1,112 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #008cffd8;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+#search-bar {
+  width: 40%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+section h2 {
+  color: #ff8c00;
+}
+
+section p {
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px; 
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+    
+    .logo:hover{
+      transform: scale(1.8);
+    }
+
+
+
+/* Hover effects for the navigation links*/ 
+nav a:hover {
+  color: #ff5733;
+  transition: color 0.3s;
+}
+
+/* Animation for the cakepop */
+@keyframes cakepop-bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+
+/*transitions to the footer text*/ 
+footer {
+  transition: color 0.5s;
+}
+
+footer:hover {
+  color: #ff5733;
+}
+
+.Owner{
+  border-radius: 50%;
+  width: 40%;
+  
+}

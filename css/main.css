@@ -1,0 +1,173 @@
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        animation: fadeInDown 1s ease-out;
+ }
+
+    header {
+        background-color: #008cffd8;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        animation: fadeInDown 1s ease-out;
+ }
+
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        animation: fadeInUp 1s ease-out;
+ }
+
+  nav a {
+   color: #fff;
+   text-decoration: none;
+   padding: 10px;
+   margin: 0 10px;
+   animation: fadeInUp 1s ease-out;
+ }
+
+    section {
+        padding: 20px;
+ }
+ article{
+  text-align: center;
+  padding: 20px;
+  position: relative;
+ }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        animation: fadeInUp 1s ease-out;
+    }   
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 100px; 
+      height: auto;
+      animation: fadeInRight 1s ease-out;
+      transition: transform 0.3s ease-in-out;
+    }
+    .logo:hover{
+      transform: scale(1.8);
+    }
+
+    #search-bar {
+      width: 40%;
+      padding: 10px;
+      box-sizing: border-box;
+      margin-top: 10px;
+      animation: fadeInLeft 1s ease-out;
+  }
+
+
+  section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    animation: fadeIn 1s ease-out;
+}
+
+.image-container {
+    flex: 1;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+
+.info-container {
+    flex: 2;
+}
+
+.info-container h2 {
+    color: #ff8c00;
+}
+
+.info-container p {
+    line-height: 1.6;
+}
+
+
+
+#contact{
+  padding-bottom: 30px;
+}
+
+/* Hover effects for the navigation links*/ 
+nav a:hover {
+  color: #ff5733;
+  transition: color 0.3s;
+}
+
+/* Animation for the cakepop */
+@keyframes cakepop-bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-30px);
+  }
+  60% {
+      transform: translateY(-15px);
+  }
+}
+
+/*transitions to the footer text*/ 
+footer {
+  transition: color 0.5s;
+}
+
+footer:hover {
+  color: #ff5733;
+}
+
+/* Define animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

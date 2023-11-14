@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact Us - Cakepop Paradise</title>
+    
+</head>
+<body>
+
+    <header>
+      <img class="logo" src="images/Typography Initial Letter Brand Logo.jpg" alt="Cakepop Paradise logo">
+        <h1>Cakepop Paradise</h1>
+        <input type="text" id="search-bar" placeholder="Search...">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have a question or want to place an order? Reach out to us!</p>
+
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2023 Cakepop Paradise. All rights reserved.
+    </footer>
+
+</body>
+</html>
